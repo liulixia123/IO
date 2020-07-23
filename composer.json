@@ -1,0 +1,11 @@
+{
+    "name": "lixia18/io",
+    "type": "library",
+    "license": "MIT",
+    "require": {},
+    "autoload":{
+		"psr-4":{
+			"Lixia18\\Io\\" : "./src/"
+		}
+	}
+}
