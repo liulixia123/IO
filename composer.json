@@ -6,6 +6,9 @@
     "autoload":{
 		"psr-4":{
 			"Lixia18\\Io\\" : "./src/"
-		}
+		},
+		"files":[
+            "src/Helper.php"
+        ]
 	}
 }
