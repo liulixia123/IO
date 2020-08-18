@@ -21,3 +21,12 @@ function send($client, $data, $flag = true)
         fwrite($client, $response);
     }
 }
+
+//
+function pidGet($data, $Files){
+    file_put_contents($Files, $data);
+}
+
+function pidGet($file){
+    return file_get_contents($file);
+}
