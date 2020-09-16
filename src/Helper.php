@@ -22,11 +22,14 @@ function send($client, $data, $flag = true)
     }
 }
 
-//
-function pidGet($data, $Files){
-    file_put_contents($Files, $data);
+function pidPut($data, $path){
+(empty($data)) ? file_put_contents($path, null) : file_put_contents($path, $data.'|', 8) ;
 }
-
-function pidGet($file){
-    return file_get_contents($file);
+function pidGet($path){
+$string = file_get_contents($path);
+return explode("|", substr($string, 0 , strlen($string) - 1));
+}
+function basePath(){
+// __DIR__ 这是获取该文件运行的目录地址
+return __DIR__;
 }

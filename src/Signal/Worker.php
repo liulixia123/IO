@@ -30,6 +30,7 @@ class Worker{
 			//fclose($client); 
 		} 
 	}
+	//信号处理
 	public function sighander($client){
 		return function($sig) use ($client){
 			// is_callable判断一个参数是不是闭包 

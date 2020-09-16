@@ -18,6 +18,8 @@ class Worker
 	protected $socket_address = null;
 	// 记录子进程pid地址
 	protected $workerPidFiles = __DIR__."/workerPids.txt";
+	//记录父进程pid地址
+	protected $masterPidFiles = __DIR__."/masterPids.txt";
 	// 以内存的方式存pids
 	protected $workerPids = [];
 	public function __construct($socket_address)
